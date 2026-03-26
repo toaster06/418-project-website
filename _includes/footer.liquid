@@ -1,8 +1,14 @@
 {% capture footer_contents %}
   &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
+  {% assign _fn = site.first_name | strip %}
+  {% assign _mn = site.middle_name | strip %}
+  {% assign _ln = site.last_name | strip %}
+  {% if _fn != '' or _mn != '' or _ln != '' %}
+    {{ site.first_name }}
+    {{ site.middle_name }}
+    {{ site.last_name }}.
+  {% endif %}
+  {{ site.footer_text }}
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
