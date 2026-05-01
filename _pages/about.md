@@ -14,4 +14,5 @@ This site hosts updates & deliverables for our 15-418 final project.
 **[Milestone report (PDF)]({{ '/assets/project/15418_Milestone_Report.pdf' | relative_url }})**
 
 ## Final Report / Poster
-**TBD**
+
+**[Final report (PDF)]({{ '/assets/project/15418_Final_Report.pdf' | relative_url }})**
